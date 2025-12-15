@@ -18,17 +18,19 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 md:h-24">
-          <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center gap-2 md:gap-3 group" onClick={() => setIsOpen(false)}>
+        <div className="flex justify-between items-center h-16 md:h-24">
+          <div className="flex items-center flex-shrink-0">
+            <Link to="/" className="flex items-center gap-2 md:gap-3 group" onClick={() => setIsOpen(false)}>
               {/* Logo Image */}
               <img 
                 src="https://raw.githubusercontent.com/subagopi1979-lgtm/subawellnesswonders/main/logo.jpg" 
                 alt="Suba Wellness Logo" 
-                className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover border-2 border-brand-100 group-hover:border-brand-300 transition-colors"
+                className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-full object-cover border-2 border-brand-100 group-hover:border-brand-300 transition-colors"
               />
               <div className="flex flex-col">
-                <span className="font-serif font-bold text-lg md:text-xl text-gray-900 tracking-tight group-hover:text-brand-700 transition-colors">Suba Wellness Wonders</span>
+                <span className="font-serif font-bold text-base sm:text-lg md:text-xl text-gray-900 tracking-tight group-hover:text-brand-700 transition-colors leading-tight">
+                  Suba Wellness Wonders
+                </span>
               </div>
             </Link>
           </div>
